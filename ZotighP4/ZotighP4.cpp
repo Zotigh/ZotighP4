@@ -12,10 +12,15 @@
 #include <iostream>
 #include "functions.h"
 
+const int aluminum = 0.098;
+const int silver = 0.379;
+const int gold = 0.619;
+const int copper = 0.323;
+const int platinum = 0.773;
 
 int main()
 {
-	GreetingMessage();
+	int SelectCooperModel();
 
 	return 0;
 }
