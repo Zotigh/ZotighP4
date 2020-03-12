@@ -27,6 +27,10 @@ int main()
 	do {
 		int SelectCooperModel();
 
+		// cout to ask if user wants to go again
+		cout << "\nCalculate another? (y/n); ";
+		cin >> choice;
+
 		while (choice != "n" && choice != "y")
 		{
 			cout << "Not a valid choice." << endl;
