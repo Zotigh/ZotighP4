@@ -32,37 +32,37 @@ int SelectCooperModel()
 	return input;
 }
 
-int SelectMetalForBars()
-{
+//int SelectMetalForBars()
+//{
+//
+//}
 
-}
+//int SelectNumberOfBars()
+//{
+//
+//}
 
-int SelectNumberOfBars()
-{
+//double CalculateCargoCapacity(double density, int numBars)
+//{
+//
+//}
 
-}
+//double CalculateCargoCapacity(int cooperType)
+//{
+//
+//}
 
-double CalculateCargoCapacity(double density, int numBars)
-{
+//string CarryBarWright()
+//{
+//
+//}
 
-}
+//string FirBarVolume(int numBars, double cargoCapacity)
+//{
+//
+//}
 
-double CalculateCargoCapacity(int cooperType)
-{
-
-}
-
-string CarryBarWright()
-{
-
-}
-
-string FirBarVolume(int numBars, double cargoCapacity)
-{
-
-}
-
-string MaxCarBars(double cargoCapacity, double onrBarWt)
-{
-
-}
+//string MaxCarBars(double cargoCapacity, double onrBarWt)
+//{
+//
+//}

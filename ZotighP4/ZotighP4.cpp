@@ -20,6 +20,7 @@ const int platinum = 0.773;
 
 int main()
 {
+	WriteHeader();
 	int SelectCooperModel();
 
 	return 0;
