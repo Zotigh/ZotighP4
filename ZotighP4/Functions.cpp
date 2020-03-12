@@ -1,5 +1,3 @@
-// ZotighP4.cpp : This file contains the 'main' function. Program execution begins and ends there.
-
 /******************************************************
 * Programmer: Lance Zotigh
 * Program: Functions
@@ -8,14 +6,14 @@
 * project.
 *******************************************************/
 
-
 #include <iostream>
-#include "functions.h"
+#include <string>
+#include "Functions.h"
+using namespace std;
 
-
-int main()
+//Write_Hello writes a greeting message to the screen
+void GreetingMessage()
 {
-	GreetingMessage();
-
-	return 0;
+	cout << "Welcome to my program!" << endl;
 }
+

@@ -1,5 +1,3 @@
-// ZotighP4.cpp : This file contains the 'main' function. Program execution begins and ends there.
-
 /******************************************************
 * Programmer: Lance Zotigh
 * Program: Functions
@@ -8,14 +6,13 @@
 * project.
 *******************************************************/
 
+#ifndef _FUNCTIONS_H
+#define _FUNCTIONS_H
 
-#include <iostream>
-#include "functions.h"
+void GreetingMessage();
+
+using namespace std;
 
 
-int main()
-{
-	GreetingMessage();
 
-	return 0;
-}
+#endif // !_FUNCTIONS_H
