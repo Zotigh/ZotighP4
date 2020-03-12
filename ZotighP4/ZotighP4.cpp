@@ -4,7 +4,7 @@
 * Programmer: Lance Zotigh
 * Program: Functions
 * Date: 2/26/2020
-* Purpose: Provide functions needed in AskName AgeFunc
+* Purpose: To calculate the carry load of a mini van
 * project.
 *******************************************************/
 
@@ -12,16 +12,29 @@
 #include <iostream>
 #include "functions.h"
 
-const int aluminum = 0.098;
-const int silver = 0.379;
-const int gold = 0.619;
-const int copper = 0.323;
-const int platinum = 0.773;
+const double aluminum = 0.098;
+const double silver = 0.379;
+const double gold = 0.619;
+const double copper = 0.323;
+const double platinum = 0.773;
 
 int main()
 {
+	string choice;
+
 	WriteHeader();
-	int SelectCooperModel();
+
+	do {
+		int SelectCooperModel();
+
+		while (choice != "n" && choice != "y")
+		{
+			cout << "Not a valid choice." << endl;
+			cout << "Please enter a valid option (y/n): ";
+			cin >> choice;
+		}
+
+	} while (choice != "n" && choice == "y");
 
 	return 0;
 }

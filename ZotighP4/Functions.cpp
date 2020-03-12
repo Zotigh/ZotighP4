@@ -2,7 +2,7 @@
 * Programmer: Lance Zotigh
 * Program: Functions
 * Date: 2/26/2020
-* Purpose: Provide functions needed in AskName AgeFunc
+* Purpose:  To calculate the carry load of a mini van
 * project.
 *******************************************************/
 
