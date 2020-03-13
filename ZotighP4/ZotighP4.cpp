@@ -1,7 +1,7 @@
 // ZotighP4.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 /******************************************************
-* Programmer: Lance Zotigh
+* Programmer: Lance Zotigh (lzotigh@cnm.edu)
 * Program: Functions
 * Date: 2/26/2020
 * Purpose: To calculate the carry load of a mini van
@@ -10,6 +10,7 @@
 
 
 #include <iostream>
+#include <vector>
 #include "functions.h"
 
 const double aluminum = 0.098;
@@ -23,12 +24,17 @@ int main()
 	string choice;
 
 	WriteHeader();
+	WriteInstrictions();
 
 	do {
-		int SelectCooperModel();
+		SelectCooperModel();
+
+
+
+
 
 		// cout to ask if user wants to go again
-		cout << "\nCalculate another? (y/n); ";
+		cout << "\nWould you like to calculate another? (y/n); ";
 		cin >> choice;
 
 		while (choice != "n" && choice != "y")
@@ -40,5 +46,7 @@ int main()
 
 	} while (choice != "n" && choice == "y");
 
+	cout << "Thank you for using my program, Goodbye!" << endl;
+	
 	return 0;
 }

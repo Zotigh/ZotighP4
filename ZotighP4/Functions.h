@@ -1,5 +1,5 @@
 /******************************************************
-* Programmer: Lance Zotigh
+* Programmer: Lance Zotigh (lzotigh@cnm.edu)
 * Program: Functions
 * Date: 2/26/2020
 * Purpose:  To calculate the carry load of a mini van
