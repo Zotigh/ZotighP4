@@ -23,10 +23,14 @@ int main()
 {
 	string choice;
 
+	// Header
 	WriteHeader();
-	WriteInstrictions();
-
+	// Begining of play loop
 	do {
+		// Show instructions
+		WriteInstrictions();
+
+		// Shows list the user can pick from
 		SelectCooperModel();
 
 
@@ -37,6 +41,7 @@ int main()
 		cout << "\nWould you like to calculate another? (y/n); ";
 		cin >> choice;
 
+		// Handles an invalid answer
 		while (choice != "n" && choice != "y")
 		{
 			cout << "Not a valid choice." << endl;
@@ -46,6 +51,7 @@ int main()
 
 	} while (choice != "n" && choice == "y");
 
+	// Exit message
 	cout << "Thank you for using my program, Goodbye!" << endl;
 	
 	return 0;
