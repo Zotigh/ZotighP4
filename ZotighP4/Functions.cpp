@@ -35,7 +35,7 @@ void WriteHeader()
 
 int SelectCooperModel()
 {
-	int input;
+	int carModelInput;
 
 	//vector<string> namesOfCoopers;
 	//namesOfCoopers.push_back("");
@@ -56,7 +56,7 @@ int SelectCooperModel()
 		cout << (i + 1) * 2 << " = " << namesOfCoops[i] << endl;
 	}
 	cout << "Response: ";
-	cin >> input;
+	cin >> carModelInput;
 	cin.ignore();
 
 	/*this was just to see if it was returning 2 or 4 
@@ -65,19 +65,32 @@ int SelectCooperModel()
 	/*This is how you display the number from the vector
 	cout << namesOfCoops[input - 1];*/
 
-	return input;
+	return carModelInput;
 }
 
 int SelectMetalForBars()
 {
+	int metalInput;
+
 	vector<string> namesOfMetals;
-	namesOfCoopers.push_back("Aluminum");
-	namesOfCoopers.push_back("Silver");
-	namesOfCoopers.push_back("Gold");
-	namesOfCoopers.push_back("Copper");
-	namesOfCoopers.push_back("Platinum");
+	namesOfMetals.push_back("Aluminum");
+	namesOfMetals.push_back("Silver");
+	namesOfMetals.push_back("Gold");
+	namesOfMetals.push_back("Copper");
+	namesOfMetals.push_back("Platinum");
 
+	for (int i = 0; i <= 4; ++i)
+	{
+		cout << i + 1 << " = " << namesOfMetals[i] << endl;
+	}
 
+	cout << "Choice: ";
+	cin >> metalInput;
+	cin.ignore();
+
+	//int metalChoice = namesOfMetals[metalInput - 1];
+	int metalIndex = metalInput - 1;
+	return metalIndex;
 }
 
 //int SelectNumberOfBars()
