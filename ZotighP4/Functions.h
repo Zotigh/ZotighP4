@@ -9,15 +9,19 @@
 #ifndef _FUNCTIONS_H
 #define _FUNCTIONS_H
 
+const double twoDoorSpace = 24;
+const double fourDoorSpace = 32.8;
+const double fortKnoxBarGold = 34;
+
 using namespace std;
 
 void WriteHeader();
-void WriteInstrictions();
+//void WriteInstrictions();
 int SelectCooperModel();
-int SelectNumberOfBars();
+/*int SelectNumberOfBars();
 double CalculateCargoCapacity(double density, int numBars);
 string CarryBarWright();
 string FirBarVolume(int numBars, double cargoCapacity);
-string MaxCarBars(double cargoCapacity, double onrBarWt);
+string MaxCarBars(double cargoCapacity, double onrBarWt);*/
 
 #endif // !_FUNCTIONS_H

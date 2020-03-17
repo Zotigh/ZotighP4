@@ -29,22 +29,25 @@ int main()
 	// Begining of play loop
 	do {
 		// Show instructions thought it would be better here since the user if the repeat the program they are show how to use it again
-		WriteInstrictions();
+		//WriteInstrictions();
 		
 		// gives user the option to select god bars
 		//selectMetalForBars();
 
 		// Shows list the user can pick from
 		SelectCooperModel();
-
+		
 		// Gets the number of bars
-		SelectNumberOfBars();
+		//SelectNumberOfBars();
 
 		// calculation for weight capacity
 		//CalculateCargoCapacity();
 
 		// calculates weight of the bars
 		//CalculateWeightOfBars();
+
+
+
 
 		// cout to ask if user wants to go again
 		cout << "\nWould you like to calculate another? (y/n); ";
