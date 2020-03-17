@@ -105,7 +105,16 @@ int SelectNumberOfBars()
 
 double CalculateWeightOfBars(double density, int numBars)
 {
+	vector<double> valuesOfMetals;
+	valuesOfMetals.push_back(0.098);//Aluminum 
+	valuesOfMetals.push_back(0.379);//Silver
+	valuesOfMetals.push_back(0.619);//Gold
+	valuesOfMetals.push_back(0.323);//Copper
+	valuesOfMetals.push_back(0.773);//Platinum
 	
+	int totalWeight = SelectNumberOfBars() * valuesOfMetals[SelectMetalForBars()];
+
+	return totalWeight;
 }
 
 //double CalculateCargoCapacity(int cooperType)
