@@ -90,13 +90,18 @@ int SelectMetalForBars()
 
 	//int metalChoice = namesOfMetals[metalInput - 1];
 	int metalIndex = metalInput - 1;
+	// returns the index
 	return metalIndex;
 }
 
-//int SelectNumberOfBars()
-//{
-//
-//}
+int SelectNumberOfBars()
+{
+	int numberOfBars;
+	cout << "Please enter the number of bars you have: ";
+	cin >> numberOfBars;
+	cin.ignore();
+	return numberOfBars;
+}
 
 //double CalculateCargoCapacity(double density, int numBars)
 //{
