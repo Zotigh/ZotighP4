@@ -32,13 +32,13 @@ int main()
 		//WriteInstrictions();
 		
 		// gives user the option to select god bars
-		//selectMetalForBars();
+		SelectMetalForBars();
 
 		// Shows list the user can pick from
 		SelectCooperModel();
 		
 		// Gets the number of bars
-		//SelectNumberOfBars();
+		SelectNumberOfBars();
 
 		// calculation for weight capacity
 		//CalculateCargoCapacity();

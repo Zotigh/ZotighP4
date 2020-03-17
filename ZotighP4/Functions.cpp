@@ -97,16 +97,16 @@ int SelectMetalForBars()
 int SelectNumberOfBars()
 {
 	int numberOfBars;
-	cout << "Please enter the number of bars you have: ";
+	cout << "Please enter the number of bars you want to carry: ";
 	cin >> numberOfBars;
 	cin.ignore();
 	return numberOfBars;
 }
 
-//double CalculateCargoCapacity(double density, int numBars)
-//{
-//
-//}
+double CalculateWeightOfBars(double density, int numBars)
+{
+	
+}
 
 //double CalculateCargoCapacity(int cooperType)
 //{
