@@ -79,6 +79,8 @@ int SelectMetalForBars()
 	namesOfMetals.push_back("Copper");
 	namesOfMetals.push_back("Platinum");
 
+	cout << "\nPlease Select a metal you are using:" << endl;
+
 	for (int i = 0; i <= 4; ++i)
 	{
 		cout << i + 1 << " = " << namesOfMetals[i] << endl;
@@ -96,25 +98,29 @@ int SelectMetalForBars()
 
 int SelectNumberOfBars()
 {
-	int numberOfBars;
+	int numOfBars;
 	cout << "Please enter the number of bars you want to carry: ";
-	cin >> numberOfBars;
+	cin >> numOfBars;
 	cin.ignore();
-	return numberOfBars;
+	return numOfBars;
 }
 
 double CalculateWeightOfBars(double density, int numBars)
 {
-	vector<double> valuesOfMetals;
-	valuesOfMetals.push_back(0.098);//Aluminum 
-	valuesOfMetals.push_back(0.379);//Silver
-	valuesOfMetals.push_back(0.619);//Gold
-	valuesOfMetals.push_back(0.323);//Copper
-	valuesOfMetals.push_back(0.773);//Platinum
-	
-	int totalWeight = SelectNumberOfBars() * valuesOfMetals[SelectMetalForBars()];
+	double totalSum;
 
-	return totalWeight;
+	vector<double> valuesofmetals;
+	valuesofmetals.push_back(0.098);//aluminum 
+	valuesofmetals.push_back(0.379);//silver
+	valuesofmetals.push_back(0.619);//gold
+	valuesofmetals.push_back(0.323);//copper
+	valuesofmetals.push_back(0.773);//platinum	
+
+	totalSum = numBars * valuesofmetals[density];
+
+	cout << totalSum;
+
+	return totalSum;
 }
 
 //double CalculateCargoCapacity(int cooperType)

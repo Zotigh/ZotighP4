@@ -31,17 +31,17 @@ int main()
 		// Show instructions thought it would be better here since the user if the repeat the program they are show how to use it again
 		//WriteInstrictions();
 		
-		// gives user the option to select god bars
-		SelectMetalForBars();
-
 		// Shows list the user can pick from
 		SelectCooperModel();
+
+		// gives user the option to select god bars
+		double density = SelectMetalForBars();
 		
 		// Gets the number of bars
-		SelectNumberOfBars();
+		int numBars = SelectNumberOfBars();
 
 		// calculation for weight capacity
-		//CalculateCargoCapacity();
+		CalculateWeightOfBars(density, numBars);
 
 		// calculates weight of the bars
 		//CalculateWeightOfBars();

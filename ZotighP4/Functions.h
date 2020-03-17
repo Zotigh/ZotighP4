@@ -24,8 +24,8 @@ void WriteHeader();
 int SelectMetalForBars();
 int SelectCooperModel();
 int SelectNumberOfBars();
-/*double CalculateWeightOfBars(double density, int numBars);
-double CalculateCargoCapacity(int cooperType);
+double CalculateWeightOfBars(double density, int numBars);
+/*double CalculateCargoCapacity(int cooperType);
 string CarryBarWeight();
 string FirBarVolume(int numBars, double cargoCapacity);
 string MaxCarBars(double cargoCapacity, double onrBarWt);*/
